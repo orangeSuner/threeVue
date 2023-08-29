@@ -1,31 +1,35 @@
-import Three from 'three'
 <script setup>
+import * as THREE from 'three'
+
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+const render = new THREE.WebGLRenderer()
+
+camera.position.set(1, 1, 1)
+scene.add(camera)
+
+const cubeGeometry = new THREE.BoxGeometry(1, 1, 1)
+const cubeMaterial = new THREE.MeshBasicMaterial({color: '#ff6800'})
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+scene.add(cube)
+
+render.setSize(window.innerWidth, window.innerHeight)
+document.body.appendChild(render.domElement)
+render.render(scene, camera)
 
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div></div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+*{
+  margin: 0;
+  padding: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+html, body {
+  width: 100vw;
+  height: 100vh;
 }
 </style>
