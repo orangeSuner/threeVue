@@ -1,0 +1,11 @@
+Model Information:
+* title:	Crane-manipulator
+* source:	https://sketchfab.com/3d-models/crane-manipulator-2d305b5782874ea7bde55626c0a598a1
+* author:	Indie_Weed (https://sketchfab.com/Indie_Weed)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Crane-manipulator" (https://sketchfab.com/3d-models/crane-manipulator-2d305b5782874ea7bde55626c0a598a1) by Indie_Weed (https://sketchfab.com/Indie_Weed) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
